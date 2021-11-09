@@ -1,0 +1,21 @@
+package Chapter4;
+
+public class Exercise18 {
+    public static void main(String[] args) {
+        int accountNumber = 1221986834;
+        int balance = 12000;
+        int charges = 45000;
+        int credits = 20000;
+        int creditLimit = 2300;
+
+        System.out.printf("Account number: %s%nBalance at the beginning of the month: $%s%n",
+                accountNumber, balance);
+        System.out.printf("Credit limit: $%s%n%n", creditLimit);
+
+        int newBalance = balance + charges - credits;
+        System.out.printf("New balance: $%s%n", newBalance);
+
+        if (newBalance > creditLimit)
+            System.out.println("Credit limit exceeded");
+    }
+}
